@@ -24,15 +24,14 @@
 
 # Site settings
 title: material
-email: naveen@pixelblenders.com
+email: ameetrahane@berkeley.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Hello, I'm Naveen, a freelance front-end developer
-  and UI designer. Check out my projects on GitHub
+  Hello, I'm Ameet, a student in Applied Math and Cognitive Science at UC Berkeley. 
 baseurl: "/material/" # the subpath of your site, e.g. /blog/
-url: "http://naveenshaji.github.io/material" # the base hostname & protocol for your site
+url: "http://AmeetR.github.io/material" # the base hostname & protocol for your site
 twitter_username: navvenshady
 github_username:  naveenshaji
-css: "cyan"
+css: "red"
 scroll-cursor: "#00BCD4"
 scroll-rail: "#0097A7"
 
