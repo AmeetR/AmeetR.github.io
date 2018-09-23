@@ -30,7 +30,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://AmeetR.github.io" # the base hostname & protocol for your site
 github_username:  AmeetR
-css: "red"
+css: "pink"
 scroll-cursor: "#00BCD4"
 scroll-rail: "#0097A7"
 
