@@ -1,0 +1,215 @@
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.05in}
+\addtolength{\evensidemargin}{-0.05in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textcolor{\color{}}{
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      }
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\usepackage[left=.5cm, right=.5cm, top=1cm, bottom=1cm]{geometry}
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}\textcolor{}{
+  \textbf{{\Large Ameet Rahane}}} & Email : \href{mailto:ameeetrahane@berkeley.edu}{ameetrahane@berkeley.edu}\\
+  & Mobile : 805-573-3288 \\
+\end{tabular*}
+\vspace{-20pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Berkeley}{Berkeley, CA}
+      {Bachelors of Arts in Cognitive Science, Applied Math;  GPA: 3.00}{Aug 2016 - Present}
+  \resumeSubHeadingListEnd
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeItemListStart
+        \item \emph{Languages and tools proficient:} Python (Pandas, OpenCV, NumPy), R, SQL, HTML, JS, CSS, \LaTeX, Java, Git
+        \item \emph{Languages and tools familiar:} C++, Visual Basic, PowerShell, Scheme (Lisp), Subversion, Matlab
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Wilbrecht Lab -- Helen Wills Neuroscience Institute \& UCB Dept. of Psychology}{Berkeley, CA}
+      {Undergraduate Analytical Researcher}{May 2017 - Present}
+      \resumeItemListStart
+        \resumeItem{Computer Vision}
+          {Utilized R with Wholebrain, OpenCV, and other misc. libraries in order to generate a 3d model of a brain given mouse brain slices. These image were also mapped onto an atlas, generating neuron counts for each section of the brain given and respective locations.}
+        \resumeItem{Automated Matching to an Atlas}{Automating the atlas mapping of the above as a preprocessing step, using Python, OpenCV, NumPy to generate similarity scores for each slice of the brain to each slice of the atlas brains, allowing the system to find the closest match in the atlas to the given slice. This makes the above job more sustainable at higher loads and decreases overhead.}  
+        \resumeItem{Data Pipeline}{Combining all of the above pieces with other preprocessing steps, and "glue code" in order to run the entire system without any overhead on an offsite cloud computing solution. }
+        
+      \resumeItemListEnd
+      \resumeSubHeadingListEnd
+        \resumeSubHeadingListStart
+    \resumeSubheading
+      {Goodly Labs -- Berkeley Institute of Data Science}{Berkeley, CA}
+      {Undergraduate Data Science Researcher}{Jan 2018 - May 2018}
+      \resumeItemListStart
+        \resumeItem{Inter-annotator Agreement}
+          {Quantitatively consolidated data inconsistencies within our user-created dataset. This takes crowd generated data and finds the most reliable parts of the data to conduct more analysis on.}
+        
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+          \resumeSubHeadingListStart
+    \resumeSubheading
+      {Reasoning Group -- University of California, Berkeley Dept of Education}{Berkeley, CA}
+      {Undergraduate Researcher}{Jan 2018 - May 2018}
+      \resumeItemListStart
+        \resumeItem{Climate Change Education}
+          {Studying the effect of different technological instruction mediums on the impact of climate change education}
+        
+      \resumeItemListEnd 
+  \resumeSubHeadingListEnd
+
+%
+
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Yardi Inc}{Oxnard, CA}
+      {Programming Intern -- Data Science and Software Engineering}{June 2018 - Aug 2018}
+      \resumeItemListStart
+        \resumeItem{Project Tracking}
+          {Improved corporate productivity by implementing a project tracking tool utilizing Visual Basic, SQL, HTML5, JavaScript, CSS, and MVC Design ideologies.}
+        \resumeItem{Project Tracking Predictive Analytics}
+            {Created a plan for generating analytics to improve oversight of all projects}
+        \resumeItem{Automated Emails}
+          {Improved communication between Development and Quality Assurance Teams by creating a powershell script to email a history of all committed changes by development groups to denoted QA members. }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {The Good Food Institute}{San Francisco, CA}
+      {Science Technology Intern -- Plant Protein Analysis}{May 2017 - Sept 2017}
+      \resumeItemListStart
+        \resumeItem{Plant Based Proteins}
+          {Developed a database of plant-based proteins and necessary other traits, such as their ability to be integrated into food and other quantitative measures}
+          \resumeItem{Analytics}{Developed a data analysis pipeline plan to be implemented by the next batch of interns.}
+        
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {QAD Inc.}{Summerland, CA}
+      {Software Engineering Intern}{June 2016 - Aug 2016}
+      \resumeItemListStart
+        \resumeItem{Scalable Vector Graphics}
+          {Improved corporate workflow by rebuilding a dynamic webpage of enterprise tasks using Scalable Vector Graphics in HTML5}
+        \resumeItem{Java Build Processes}
+          {Published the above project using Java Build Processes, such as Maven}
+        \resumeItem{Documentation}
+        {Wrote developer and user targeted documents to explain the functionality and usability of the corporate maps}
+        
+      \resumeItemListEnd
+
+    
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+
+%--------PROGRAMMING SKILLS------------
+\section{Fellowships}
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {CITRIS and the Banantao Institute}{Berkeley, CA}
+      {Tech for Social Good Fellow}{Jan 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{Facial Recognition and Predictions}
+          {Recognizing and classifying faces based on age, skin color, emotion, etc. using machine learning models, such as convolutional neural networks and Bayesian classifiers.}
+         \resumeItem{Bias}{The above is used in order to depict bias existent within facial recognition models and datasets through user interactive demonstrations of how various differences in inputs could change outputs and quantitative analysis of this data.}
+         
+        
+        
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {Center for Technology, Society, and Policy }{Berkeley, CA}
+      {Data for Social Good Fellow}{Jan 2018 - May 2018}
+      \resumeItemListStart
+        \resumeItem{Data Transparency Metric}
+          {In order to investigate which cities made data accessible to inhabitants in the most useful manner, we defined a multi-pronged metric, allowing us to use analytical methods to quantify it  , such as NLP Cosine Similarity Scoring}
+          
+        
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
